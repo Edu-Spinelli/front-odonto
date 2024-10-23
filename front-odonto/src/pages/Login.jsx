@@ -45,7 +45,7 @@ const Login = () => {
         </div>
 
         {/* Direita: Formulário de Login */}
-        <div className="w-1/2 p-12 flex justify-center items-center">
+        <div className="w-1/2 p flex justify-center items-center">
           <FormLogin />
         </div>
       </div>
