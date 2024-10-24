@@ -1,12 +1,13 @@
-import FormLogin from "../components/FormLogin";
 import { Carousel } from "flowbite-react";
 import imlog1 from "../assets/imlog1.png";
 import imlog2 from "../assets/imlog2.png";
 import imlog3 from "../assets/imlog3.png";
 import imlog4 from "../assets/imlog4.png";
 import imlog5 from "../assets/imlog5.png";
+import FormRegister from "../components/FormRegister";
 
-const Login = () => {
+
+const Register = () => {
   return (
     <div className="flex h-screen w-screen bg-gradient-to-r from-teal-50 to-green-100 justify-center items-center">
       {/* Aqui aumentamos o tamanho máximo para 'max-w-8xl' */}
@@ -45,11 +46,11 @@ const Login = () => {
 
         {/* Direita: Formulário de Login */}
         <div className="w-1/2 p flex justify-center items-center">
-          <FormLogin />
+          <FormRegister />
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Register;

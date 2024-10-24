@@ -1,6 +1,6 @@
-import React from "react";
 import Logo from "../assets/LogoOdontoSoft.png";
 import { FiMail, FiLock } from "react-icons/fi"; // Ícones para email e senha
+import { Link } from "react-router-dom";
 
 const FormLogin = () => {
   return (
@@ -51,9 +51,9 @@ const FormLogin = () => {
         </button>
         <p className="mt-4 text-center text-sm">
           Ainda não possui acesso?{" "}
-          <a href="#" className="text-blue-500 hover:underline">
+          <Link to="/register" className="text-blue-500 hover:underline">
             Crie sua conta aqui.
-          </a>
+          </Link>
         </p>
       </form>
     </div>
