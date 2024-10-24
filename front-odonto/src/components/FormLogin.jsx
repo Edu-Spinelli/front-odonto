@@ -1,8 +1,7 @@
 import Logo from "../assets/LogoOdontoSoft.png";
-import { FiMail, FiLock } from "react-icons/fi"; // Ícones para email e senha
-import { Link } from "react-router-dom";
+import { FiMail, FiLock } from "react-icons/fi";
 
-const FormLogin = () => {
+const FormLogin = ({ toggleForm }) => {
   return (
     <div className=" w-full pl-12 pr-12 h-full py-20">
       <div className="flex justify-center pb-10">
@@ -15,7 +14,6 @@ const FormLogin = () => {
       </p>
       <form>
         <div className="mb-4 relative">
-          {/* Ícone de email */}
           <FiMail className="absolute left-3 top-3 text-blue-400" size={20} />
           <input
             type="email"
@@ -25,7 +23,6 @@ const FormLogin = () => {
           />
         </div>
         <div className="mb-4 relative">
-          {/* Ícone de senha */}
           <FiLock className="absolute left-3 top-3 text-blue-400" size={20} />
           <input
             type="password"
@@ -51,9 +48,9 @@ const FormLogin = () => {
         </button>
         <p className="mt-4 text-center text-sm">
           Ainda não possui acesso?{" "}
-          <Link to="/register" className="text-blue-500 hover:underline">
+          <span onClick={toggleForm} className="text-blue-500 hover:underline cursor-pointer">
             Crie sua conta aqui.
-          </Link>
+          </span>
         </p>
       </form>
     </div>
