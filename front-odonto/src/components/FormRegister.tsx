@@ -1,7 +1,13 @@
 import Logo from "../assets/LogoOdontoSoft.png";
 import { FiMail, FiLock, FiUser, FiPhone } from "react-icons/fi";
 
-const FormRegister = ({ toggleForm }) => {
+import React from "react";
+
+interface FormRegisterProps {
+  toggleForm: () => void;
+}
+
+const FormRegister: React.FC<FormRegisterProps> = ({ toggleForm }) => {
   return (
     <div className=" w-full pl-12 pr-12 h-full py-20">
       <div className="flex justify-center pb-10">

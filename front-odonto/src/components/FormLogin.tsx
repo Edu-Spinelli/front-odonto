@@ -1,7 +1,12 @@
+
 import Logo from "../assets/LogoOdontoSoft.png";
 import { FiMail, FiLock } from "react-icons/fi";
 
-const FormLogin = ({ toggleForm }) => {
+interface FormLoginProps {
+  toggleForm: () => void;
+}
+
+const FormLogin: React.FC<FormLoginProps> = ({ toggleForm }) => {
   return (
     <div className=" w-full pl-12 pr-12 h-full py-20">
       <div className="flex justify-center pb-10">
